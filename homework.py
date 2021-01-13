@@ -76,7 +76,7 @@ def main():
                 'current_date',
                 current_timestamp
             )
-            time.sleep(300)
+            time.sleep(1200)
         except Exception as e:
             print(f'Бот столкнулся с ошибкой: {e}')
             time.sleep(5)
