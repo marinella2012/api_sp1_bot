@@ -76,6 +76,8 @@ def main():
                 'current_date',
                 current_timestamp
             )
+            if current_timestamp is None:
+                current_timestamp = int(time.time())
             time.sleep(1200)
         except Exception as e:
             print(f'Бот столкнулся с ошибкой: {e}')
