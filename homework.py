@@ -19,7 +19,7 @@ TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
 CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
 HW_URL = 'https://praktikum.yandex.ru/api/user_api/homework_statuses/'
 HW_STATUS = {
-        'reviewing': 'работа взята в ревью',
+        'reviewing': 'Работа взята в ревью',
         'rejected': 'К сожалению в работе нашлись ошибки.',
         'approved': 'Ревьюеру всё понравилось, '
         'можно приступать к следующему уроку.'
@@ -78,7 +78,7 @@ def main():
             )
             if current_timestamp is None:
                 current_timestamp = int(time.time())
-            time.sleep(1200)
+            time.sleep(60)
         except Exception as e:
             print(f'Бот столкнулся с ошибкой: {e}')
             time.sleep(5)
